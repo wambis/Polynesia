@@ -1,0 +1,42 @@
+  "II.KDAK": {
+    "II.KDAK.00.BHZ": [
+      {
+        "absolute_endtime": "1998-01-27T20:32:28.340000Z",
+        "absolute_starttime": "1998-01-27T20:23:47.340000Z",
+        "cc_shift_in_samples": 6,
+        "cc_shift_in_seconds": 1.2000000000000002,
+        "center_index": 9911,
+        "channel_id": "II.KDAK.00.BHZ",
+        "channel_id_2": "II.KDAK.S3.MXZ",
+        "dlnA": 0.20089414715766907,
+        "dt": 0.2,
+        "left_index": 8609,
+        "max_cc_value": 0.9181742668151855,
+        "min_period": 90.0,
+        "relative_endtime": 2242.8,
+        "relative_starttime": 1721.8000000000002,
+        "right_index": 11214,
+        "time_of_first_sample": "1998-01-27T19:55:05.540000Z",
+        "window_weight": 5.3152088112301294
+      },
+      {
+        "absolute_endtime": "1998-01-27T20:46:45.340000Z",
+        "absolute_starttime": "1998-01-27T20:32:28.340000Z",
+        "cc_shift_in_samples": 36,
+        "cc_shift_in_seconds": 7.2,
+        "center_index": 13356,
+        "channel_id": "II.KDAK.00.BHZ",
+        "channel_id_2": "II.KDAK.S3.MXZ",
+        "dlnA": 0.1401502788066864,
+        "dt": 0.2,
+        "left_index": 11214,
+        "max_cc_value": 0.9888310432434082,
+        "min_period": 90.0,
+        "relative_endtime": 3099.8,
+        "relative_starttime": 2242.8,
+        "right_index": 15499,
+        "time_of_first_sample": "1998-01-27T19:55:05.540000Z",
+        "window_weight": 9.415868933995565
+      }
+    ]
+  }
