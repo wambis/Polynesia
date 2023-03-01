@@ -21,7 +21,7 @@ CCT: delay time at maximum cross-correlation between s(t) and d(t)
      gamma(tau)= \int s(t) d(t-tau) dt [CHECK]
      which implies that if CCT is NEGATIVE, the synthetic is slow compared to data [CHECK]
      see figure: ost1
-CCX: the actual cross-correlation value, i.e. max(gamma)
+max_CTT: the actual cross-correlation value at CCT
 B: the beginning of the time window over which the measurements are made
 E: the end of the time window over which the measurements are made
    relative to the earthquake origin time 
