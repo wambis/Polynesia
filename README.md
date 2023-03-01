@@ -7,8 +7,9 @@ CONTENTS:
 DATA/C012798D.90_250_windows.filter.json
 -> One typical json file that leads to entries in all the tables below
 
+Typical data files that contain entries composed from the json file above are:
+
 DATA/90_250.hed
--> One typical data file that contains entries composed from the json file above
 -> The first 1000 lines of what will be 90_250.dat locally
 
 DATA/40_100#surfacewaves.hed
