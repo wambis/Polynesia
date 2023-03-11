@@ -1,1 +1,7 @@
-Data files and description
+Data files, metadata and description.
+
+The coordinates of the "regional" portion are defined by:
+
+1. It's a whole face of a cubed sphere
+2. The number of the face:
+3. The orientation of the face:
