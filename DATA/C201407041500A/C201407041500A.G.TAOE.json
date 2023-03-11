@@ -1,0 +1,25 @@
+{
+  "G.TAOE": {
+    "G.TAOE.00.BHZ": [
+      {
+        "absolute_endtime": "2014-07-04T15:35:40.770000Z", 
+        "absolute_starttime": "2014-07-04T15:30:00.970000Z", 
+        "cc_shift_in_samples": -51, 
+        "cc_shift_in_seconds": -10.200000000000001, 
+        "center_index": 9694, 
+        "channel_id": "G.TAOE.00.BHZ", 
+        "channel_id_2": "G.TAOE.S3.MXZ", 
+        "dlnA": -0.14612700045108795, 
+        "dt": 0.2, 
+        "left_index": 8845, 
+        "max_cc_value": 0.9538514018058777, 
+        "min_period": 40.0, 
+        "relative_endtime": 2108.8, 
+        "relative_starttime": 1769.0, 
+        "right_index": 10544, 
+        "time_of_first_sample": "2014-07-04T15:00:31.970000Z", 
+        "window_weight": 8.102967658340932
+      }
+    ]
+  }
+}
