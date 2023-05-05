@@ -1,0 +1,30 @@
+#parameter for histogram plot
+#Path of the data
+path: '/mnt/tigress/TROMP/data/DATA_M25/window'
+#FILES of Regional station file
+FstnName: '/data/FRENCH-POLYNESIA-PROJECT/STATIONS_GLADM25_in_CHUNK.dat'
+##File for regional events
+FevtName: '/data/FRENCH-POLYNESIA-PROJECT/EVENTS_GLADM25_in_CHUNK.dat'
+#ALL mode used in the full waveform inversion
+modes: ['17_40','40_100#body_wave','40_100#surface_wave','90_250']
+#Set the percentiles of the trim data and the original data
+#Original data percentiles
+percs_O: [0,100]
+#Trim data percentiles
+#percs: [3,95.5]
+percs: [3,97]
+#Set the position were the text should been writen on the figure
+t1 : -8.0
+#Right time-limit
+t2 : 8.5
+#Y-Axis limit
+Ymin : 0.0
+Ymax : 0.43
+#X-Axis limit
+Xmin : -12.0
+Xmax :  12.0
+#Fonte for text
+fontsize_Title : 18
+fontsize_Label : 24
+fontsize_Txt   : 17
+fsize_abc      : 35
