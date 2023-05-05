@@ -1,4 +1,4 @@
-CMTCOD   STLA STLO NN.CODE.COMP STLA STLO DELTA DT B E CCT DLNA  
+CMTCOD   STLA STLO NN.CODE.COMP STLA STLO DELTA DT B E CCT WEIGHT DLNA   
 
 Where:
 
@@ -8,8 +8,11 @@ event_lon
 new.stn.channel
 slat
 slon
-DELTA: epicentral distance calculated using GPSDIST obtained from
-       https://docs.obspy.org/packages/autogen/obspy.geodetics.base.gps2dist_azimuth.html
+
+epicentral distance calculated using GPSDIST obtained from
+     https://docs.obspy.org/packages/autogen/obspy.geodetics.base.gps2dist_azimuth.html
+     ? Spherical? Elliptic? Which ellipse??
+
 relative_starttime
 relative_endtime
 CCT: delay time at maximum cross-correlation between s(t) and d(t)
@@ -25,6 +28,34 @@ max_CTT: the actual cross-correlation value at CCT
 B: the beginning of the time window over which the measurements are made
 E: the end of the time window over which the measurements are made
    relative to the earthquake origin time 
-weight: data weight as assigned by Lei et al. (2020)
+
+weight: data weight as assigned by Lei et al. (2020), which is the
+length of the window divided by the minimum period of the band
+considered and then multiplied by the cross-correlation maximum
+
 dlnA: logarithmic amplitude measurement:
 
+This is the final list, to be briefly described 
+
+#CMT_event_id
+evtlat
+evtlon
+NW.STAT.CH.CMP
+stalat
+stalon
+distdg
+start_s
+end_s
+tau1b_s
+tau2_s
+X_t1
+X_t2
+CC_0
+wt_t1
+wt_t2
+wt_0
+dlnA1
+dlnA2
+dlnA0
+rms2
+rms0
