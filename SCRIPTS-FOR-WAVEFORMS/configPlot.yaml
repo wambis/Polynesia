@@ -1,0 +1,33 @@
+#set the parmater here
+#json configuration file, this should be filtered file
+##path to windows
+path_wid: "/mnt/tigress/TROMP/data/DATA_M25/window"
+#path toward observed data and synthetic data
+path_obs: "/mnt/tigress/TROMP/data/DATA_M25/proc_obsd"
+path_syn: "/mnt/tigress/TROMP/data/DATA_M25/proc_synt"
+#Set the modes
+#modes: ['40_100','40_100#body_wave','40_100#surface_wave','40_100']
+#modes: ['40_100#surface_wave']
+#Event id
+event_id : 'C201407041500A'
+#File containing the windows
+win_file: windows.filter.json
+#data proceeed
+#net.stn
+#net_stn : 'G.PVC'
+#net_stn : ['G.PVC','IU.CTAO']
+net_stn : ['G.TAOE']
+#net_stn : ['IU.AFI']
+#net_stn : ['G.PPTF']
+#net_stn : ['XU.DOTA']
+proc_obs_file: C201407041500A.proc_obsd_40_100.h5
+#synthetic proceed
+proc_syn_file: C201407041500A.proc_synt_40_100.h5
+#Set the period band
+periodband   : '40_100'
+#Set the x-limit of the axis
+x_lm_left: 0.0
+x_lm_right: 3200
+#Color List
+fcolors: ['#E56B51','grey','yellow','green','olive','orange','lime','darkorange','black','red','teal','navy','snow','coral','tomato','darkred','brown',
+                'magenta','aqua','cyan','plum','indigo','pink','hotpink','skyblue','tan','turquoise','seagreen','springgreen', 'crimson', 'gold','grey']
