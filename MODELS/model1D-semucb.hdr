@@ -1,3 +1,7 @@
-NAME
+MODEL_NAME
 x REF_FREQUENCY y
-TOTAL_NODES CMB_NODENR ICB_NONENDR z
+NRADII ICB_NRADIUS ICB_NRADIUS OCEAN_LAYERS
+-> nb_couches,icb,ocb,oce 
+RADIUS RHO VPV VSV QKAPPA QMU VPH VSH ETA
+-> r(i),rho(i),vpv(i),vsv(i),qkappa(i),qshear(i),vph(i),vsh(i),eta(i)
+
