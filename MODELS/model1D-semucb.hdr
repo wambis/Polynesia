@@ -7,9 +7,9 @@ RADIUS RHO VPV VSV QKAPPA QMU VPH VSH ETA
 
 ---------------------------------------------------------------------
 
-From Raj Moulik and Yann Capdeville
+From Raj Moulik (pers. comm.) and Yann Capdeville (yannos.generate_1Dmodel.f90)
 
-he second line has the flag for whether the model is radially
+The second line has the flag for whether the model is radially
 anisotropic (ifanis=1 if true), reference period where the elastic
 specified in the given file is strictly valid (typically 1.0 sec), and
 if the file is a card deck file or a polynomial file.
