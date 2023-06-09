@@ -1,6 +1,6 @@
 MODEL_NAME
 IFANIS TREF IFDECK
-N_RADII N_ICB N_OCB OCEAN_LAYERS
+N_RADII I_ICB I_OCB N_OCEAN_LAYERS
 -> nb_couches,icb,ocb,oce
 RADIUS RHO VPV VSV QKAPPA QMU VPH VSH ETA
 -> r(i),rho(i),vpv(i),vsv(i),qkappa(i),qshear(i),vph(i),vsh(i),eta(i)
@@ -14,7 +14,10 @@ anisotropic (ifanis=1 if true), reference period where the elastic
 specified in the given file is strictly valid (typically 1.0 sec), and
 if the file is a card deck file or a polynomial file.
 
-Third line contains the number of layers (n) followed by the indices
-of the top of the ICB AND OCB discontinuity (+ in Dahlen and Tromp
-definition) and the number of ocean layers,
+Third line contains the NUMBER of layers (n) followed by the INDICES
+of the top of the ICB and OCB discontinuities (+ in Dahlen and Tromp)
+and the NUMBER of ocean layers. (This last bit is not widely adopted.)
+
+Compare with, where the last entry on the third line is 'moho'.
+https://github.com/globalseismology/avni/blob/main/avni/models/reference1d.py
 
