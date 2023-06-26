@@ -8,9 +8,8 @@ path_syn: "/mnt/tigress/TROMP/data/DATA_M25/proc_synt"
 #Set the modes
 #modes: ['40_100','40_100#body_wave','40_100#surface_wave','40_100']
 #modes: ['40_100#surface_wave']
-#Event id
+#Event id and names of processed observation and synthetic files
 event_id :    'C201407041500A'
-# File names of processed observation and synthetic files
 proc_obs_file: C201407041500A.proc_obsd_40_100.h5
 proc_syn_file: C201407041500A.proc_synt_40_100.h5
 #File containing the windows
