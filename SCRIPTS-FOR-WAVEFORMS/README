@@ -1,0 +1,7 @@
+Filter
+
+UBC_filter.py < DATA/C201505191525A_90_250/C201505191525A.IU.AFI.obs.dat
+
+PU_filter.py < DATA/C200610160035A_filtertest/blablab.dat
+
+
