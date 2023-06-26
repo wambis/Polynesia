@@ -1,16 +1,28 @@
-# Path to windows
-path_wid: "/mnt/tigress/TROMP/data/DATA_M25/window"
-# Path to observed data and synthetic data
-path_obs: "/mnt/tigress/TROMP/data/DATA_M25/proc_obsd"
-path_syn: "/mnt/tigress/TROMP/data/DATA_M25/proc_synt"
-# Set the modes corresponds to particular data files
-# modes: ['17_40','40_100#body_wave','40_100#surface_wave','90_250']
-#Event id and names of processed observation and synthetic files
+# Input to the code: Plot_proc_obs_syn_1Comp_windowing_json.py
+
+# Path to observed data files (seismograms)
+path_obs: "/tigress/TROMP/Global_Adjoint_Tomography/data/DATA_M25/proc_obsd"
+# Path to synthetic data files (seismograms)
+path_syn: "/tigress/TROMP/Global_Adjoint_Tomography/data/DATA_M25/proc_synt"
+# Path to the window files (metrics of observed and synthetic files)
+path_wid: "/tigress/TROMP/Global_Adjoint_Tomography/data/DATA_M25/window"
+# Name the event
 event_id :    'C201407041500A'
+# File modifier
+# modes: ['17_40','40_100#body_wave','40_100#surface_wave','90_250']
+modes: '40_100#body_wave'
+# Name of the file that contains all of the windows for that event
+win_file: windows.filter.json
+
+# The directory structure of the window directory is like this:
+# path_wid/event_id.mode/win_file
+
+#  period band
+periodband   : '40_100'
+# The actual observed and synthetic files
 proc_obs_file: C201407041500A.proc_obsd_40_100.h5
 proc_syn_file: C201407041500A.proc_synt_40_100.h5
-# File containing the windows
-win_file: windows.filter.json
+
 # Network and station
 #net_stn : 'G.PVC'
 #net_stn : ['IU.AFI']
@@ -18,11 +30,10 @@ win_file: windows.filter.json
 #net_stn : ['XU.DOTA']
 #net_stn : ['G.PVC','IU.CTAO']
 net_stn : ['G.TAOE']
-#Set the period band
-periodband   : '40_100'
-#Set the x-limit of the axis
+
+# Set the x-limit of the axis
 x_lm_left: 0.0
 x_lm_right: 3200
-#Color List
+# Color List
 fcolors: ['#E56B51','grey','yellow','green','olive','orange','lime','darkorange','black','red','teal','navy','snow','coral','tomato','darkred','brown',
                 'magenta','aqua','cyan','plum','indigo','pink','hotpink','skyblue','tan','turquoise','seagreen','springgreen', 'crimson', 'gold','grey']
