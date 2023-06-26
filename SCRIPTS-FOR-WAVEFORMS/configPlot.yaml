@@ -1,19 +1,17 @@
-#set the parmater here
-#json configuration file, this should be filtered file
-##path to windows
+# Path to windows
 path_wid: "/mnt/tigress/TROMP/data/DATA_M25/window"
-#path toward observed data and synthetic data
+# Path to observed data and synthetic data
 path_obs: "/mnt/tigress/TROMP/data/DATA_M25/proc_obsd"
 path_syn: "/mnt/tigress/TROMP/data/DATA_M25/proc_synt"
-#Set the modes
-#modes: ['40_100','40_100#body_wave','40_100#surface_wave','40_100']
-#modes: ['40_100#surface_wave']
+# Set the modes corresponds to particular data files
+# modes: ['17_40','40_100#body_wave','40_100#surface_wave','90_250']
 #Event id and names of processed observation and synthetic files
 event_id :    'C201407041500A'
 proc_obs_file: C201407041500A.proc_obsd_40_100.h5
 proc_syn_file: C201407041500A.proc_synt_40_100.h5
-#File containing the windows
+# File containing the windows
 win_file: windows.filter.json
+# Network and station
 #net_stn : 'G.PVC'
 #net_stn : ['IU.AFI']
 #net_stn : ['G.PPTF']
