@@ -1,3 +1,3 @@
 # The *.bin contain float32 arrays with observed/synthetic seismograms for the particular station, e.g.
 
-#Times                       XU.DOTA..BHZ                 XU.DOTA..BHR                 XU.DOTA..BHT               
+#Times                       IU.AFI..BHZ                 IU.AFI..BHR                 IU.AFI..BHT               
