@@ -5,3 +5,10 @@ The coordinates of the "regional" portion are defined by:
 1. It's a whole face of a cubed sphere
 2. The number of the face:
 3. The orientation of the face:
+
+4. Individual event examples
+
+grep C091496G 17_40.dat > ! C091496G_17_40/C091496G_17_40.dat
+grep C201303102251A 40_100#body_wave.dat > ! C201303102251A_40_100#body_wave/C201303102251A_40_100.dat
+grep C201407041500A 40_100#surface_wave.dat > ! C201407041500A_40_100#surface_wave/C201407041500A_40_100.dat
+grep C201505191525A 90_250.dat > ! C201505191525A_90_250/C201505191525A_90_250.dat

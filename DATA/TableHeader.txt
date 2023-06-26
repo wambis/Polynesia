@@ -1,3 +1,10 @@
+Global: Wenjie Lei GLAD M-25 data set (Lei et al., 2020)
+
+Regional:  definition of "inside" according (Wamba et al., 2023)
+
+
+
+
 CMTCOD   STLA STLO NN.CODE.COMP STLA STLO DELTA DT B E CCT WEIGHT DLNA   
 
 Where:
@@ -46,11 +53,11 @@ stalon
 distdg
 start_s
 end_s
-tau1b_s
-tau2_s
-X_t1
-X_t2
-CC_0
+tau1_s  travel-time anomaly quoted by Lei, determined by cross-correlation maximization
+tau2_s  travel-time anomaly calculated by Wamba, determined by cross-correlation maximization
+X_t1    normalized cross-correlation maximum quoted by Lei
+X_t2    normalized cross-correlation maximum calculated by Wamba
+ X_0
 wt_t1
 wt_t2
 wt_0
