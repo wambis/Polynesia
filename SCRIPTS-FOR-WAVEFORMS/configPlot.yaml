@@ -10,19 +10,17 @@ path_syn: "/mnt/tigress/TROMP/data/DATA_M25/proc_synt"
 #modes: ['40_100#surface_wave']
 #Event id
 event_id : 'C201407041500A'
-#File containing the windows
-win_file: windows.filter.json
-#data proceeed
-#net.stn
-#net_stn : 'G.PVC'
-#net_stn : ['G.PVC','IU.CTAO']
-net_stn : ['G.TAOE']
-#net_stn : ['IU.AFI']
-#net_stn : ['G.PPTF']
-#net_stn : ['XU.DOTA']
 proc_obs_file: C201407041500A.proc_obsd_40_100.h5
 #synthetic proceed
 proc_syn_file: C201407041500A.proc_synt_40_100.h5
+#File containing the windows
+win_file: windows.filter.json
+#net_stn : 'G.PVC'
+#net_stn : ['IU.AFI']
+#net_stn : ['G.PPTF']
+#net_stn : ['XU.DOTA']
+#net_stn : ['G.PVC','IU.CTAO']
+net_stn : ['G.TAOE']
 #Set the period band
 periodband   : '40_100'
 #Set the x-limit of the axis
