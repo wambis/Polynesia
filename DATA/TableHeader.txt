@@ -1,68 +1,41 @@
 Global: Wenjie Lei GLAD M-25 data set (Lei et al., 2020)
 
-Regional:  definition of "inside" according (Wamba et al., 2023)
+Regional: definition of "inside" according (Wamba et al., 2023)
 
+#event_id event_lat event_lon station channel_id        slat  slon    EPIC_DIST rtive_starttime rtive_endtime tau(in s) tau_new(in s) CC(t) CC_new(t) CC(0)  weight(t)  weight_new(t) weight(0) dlnA(t) dlnA_new(t) dlnA(0) rms(t) rms(0)
+event_id: CMT Code of the event in the CMT catalog (e.g., C201309051229A, see below)
+event_lat Event centroid latitude in the CMT catalog (e.g., 10.30)
+event_lon Event centroid longitutde in the CMT catalog (e.g., -86.45)
+station   Network and station name (e.g., AE.113A)
+channel_id Full station name including the "hole" and "component" (e.g., AE.113A..BHT)
 
+      0.24      0.24
+slat     Station latitude (e.g., 32.77)
+slon     Station longitude (e.g., -113.77)
+[selev    Station elevation] NOT THERE YET, BUT FOR OBS THAT WOULD BE USEFUL (e.g. https://service.iris.edu/fdsnws/station/1/query?net=YS&station=PL68)
+EPIC_DIST Epicentral distance calculated using GPSDIST obtained from ? Spherical? Elliptic? Which ellipse?? (e.g., 33.74)
+          https://docs.obspy.org/packages/autogen/obspy.geodetics.base.gps2dist_azimuth.html
+rtive_starttime Start time in seconds of the analysis window relative to the event origin time (e.g., 792.00)
+rtive_endtime End time in seconds of the analysis window relative to the event origin time (e.g., 1239.06)
+tau(in s) Travel-time anomaly quoted by Lei, determined by cross-correlation maximization (e.g., 0.40, positive means model is fast, obs-pred)
+tau_new(in s) Travel-time anomaly recalculated by Wamba, determined by cross-correlation maximization (e.g., 0.40, negative means model is slow, obs-pred)
+CC(t)n    Normalized cross-correlation maximum quoted by Lei (e.g., 0.97)
+CC_new(t) Normalized cross-correlation maximum recalculated by Wamba (e.g., 0.97)
+CC(0)     Normalized cross-correlation at the current state without any shifting calculated by Wamba (e.g., )
+weight(t) Data weight as assigned by Lei, which is the length of the window divided by the minimum period of the band
+	  considered and then multiplied by the cross-correlation maximum, e.g. ([1239.06-792.00]/40*0.97 = ? 10.90)
+weight_new(t) Weight recalculated with new CC_new(t) (=? 11.49)
+weight(0)     Weight recalculated with new CC(0)  (=? 11.51)
+dlnA(t)       Logarithmic amplitude measurement made by Lei (e.g., 0.10)
+dlnA_new(t)      Logarithmic amplitude measurement made by Wamba (e.g., 0.10)
+dlnA(0)      Logarithmic amplitude measurement made by Wamba at current state (e.g., 0.10)
+rms(t)       Root-mean-squared misfit at tau (e.g., 0.24)
+rms(0)      Root-mean-squared misfit at current state (e.g., 0.24)
 
+See figure "ost1".
 
-CMTCOD   STLA STLO NN.CODE.COMP STLA STLO DELTA DT B E CCT WEIGHT DLNA   
-
-Where:
-
-event_id: CMT Code of the event in the CMT catalog
-event_lat
-event_lon
-new.stn.channel
-slat
-slon
-
-epicentral distance calculated using GPSDIST obtained from
-     https://docs.obspy.org/packages/autogen/obspy.geodetics.base.gps2dist_azimuth.html
-     ? Spherical? Elliptic? Which ellipse??
-
-relative_starttime
-relative_endtime
-CCT: delay time at maximum cross-correlation between s(t) and d(t)
-     where s(t) is the modeled data in GLAD-M25 (synthetic)
-     	   d(t) is the observed data
-	   data are instrument-corrected displacement waveforms
-     delay time is
-     argmax_tau [gamma(tau)] [CHECK]
-     gamma(tau)= \int s(t) d(t-tau) dt [CHECK]
-     which implies that if CCT is NEGATIVE, the synthetic is slow compared to data [CHECK]
-     see figure: ost1
-max_CTT: the actual cross-correlation value at CCT
-B: the beginning of the time window over which the measurements are made
-E: the end of the time window over which the measurements are made
-   relative to the earthquake origin time 
-
-weight: data weight as assigned by Lei et al. (2020), which is the
-length of the window divided by the minimum period of the band
-considered and then multiplied by the cross-correlation maximum
-
-dlnA: logarithmic amplitude measurement:
-
-This is the final list, to be briefly described 
-
-#CMT_event_id
-evtlat
-evtlon
-NW.STAT.CH.CMP
-stalat
-stalon
-distdg
-start_s
-end_s
-tau1_s  travel-time anomaly quoted by Lei, determined by cross-correlation maximization
-tau2_s  travel-time anomaly calculated by Wamba, determined by cross-correlation maximization
-X_t1    normalized cross-correlation maximum quoted by Lei
-X_t2    normalized cross-correlation maximum calculated by Wamba
- X_0
-wt_t1
-wt_t2
-wt_0
-dlnA1
-dlnA2
-dlnA0
-rms2
-rms0
+--------------------------------------------------------------------------------
+C201309051229A   B:143  294  40 S:153  352  50 M: 92  108 125 CMT: 1 TRIHD:  2.0
+CENTROID:      4.0 0.1  10.30 0.01  -86.45 0.01  20.6  0.3 FREE S-20131202234347
+24  4.570 0.053 -3.070 0.038 -1.500 0.038  3.830 0.096 -3.120 0.091  2.430 0.028
+V10   6.691 67  42   0.261  2 308  -6.952 23 217   6.822 303 22   85 128 68   92
