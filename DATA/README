@@ -6,9 +6,11 @@ The coordinates of the "regional" portion are defined by:
 2. The number of the face:
 3. The orientation of the face:
 
-Blablabla.
+Blablabla. Three Euler angles will do it.
 
-4. Individual event examples
+4. With these definition, give us a global/regional index vector for your data files
+
+5. Individual event examples
 
 grep C091496G 17_40.dat > ! C091496G_17_40/C091496G_17_40.dat
 grep C201303102251A 40_100#body_wave.dat > ! C201303102251A_40_100#body_wave/C201303102251A_40_100.dat
