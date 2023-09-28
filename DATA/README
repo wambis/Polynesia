@@ -6,6 +6,8 @@ The coordinates of the "regional" portion are defined by:
 2. The number of the face:
 3. The orientation of the face:
 
+Blablabla.
+
 4. Individual event examples
 
 grep C091496G 17_40.dat > ! C091496G_17_40/C091496G_17_40.dat
