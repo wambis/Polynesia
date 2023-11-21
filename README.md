@@ -1,6 +1,6 @@
 # Polynesia
 
-Data and code to reproduce figures of a forthcoming publication.
+Data and code to reproduce figures of the forthcoming publication.
 
 CONTENTS:
 
