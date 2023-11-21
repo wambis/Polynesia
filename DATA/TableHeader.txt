@@ -21,7 +21,7 @@ tau(in s) Travel-time anomaly quoted by Lei, determined by cross-correlation max
 tau_new(in s) Travel-time anomaly recalculated by Wamba, determined by cross-correlation maximization (e.g., 0.40, negative means model is slow, obs-pred)
 CC(t)n    Normalized cross-correlation maximum quoted by Lei (e.g., 0.97)
 CC_new(t) Normalized cross-correlation maximum recalculated by Wamba (e.g., 0.97)
-CC(0)     Normalized cross-correlation at the current state without any shifting calculated by Wamba (e.g., )
+CC(0)     Normalized cross-correlation at the current state without any shifting calculated by Wamba (e.g., 0.97)
 weight(t) Data weight as assigned by Lei, which is the length of the window divided by the minimum period of the band
 	  considered and then multiplied by the cross-correlation maximum, e.g. ([1239.06-792.00]/40*0.97 = ? 10.90)
 weight_new(t) Weight recalculated with new CC_new(t) (=? 11.49)
