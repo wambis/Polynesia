@@ -1,0 +1,25 @@
+#parameter for histogram plot
+#Path of the data
+path: '/mnt/tigress/TROMP/data/DATA_M25/window'
+#FILES of Regional station file
+##File for regional events
+FevtName: '/data/FRENCH-POLYNESIA-PROJECT/EVENTS_GLADM25_in_CHUNK.dat'
+FstnName: '/data/GLOBAL-STATIONS-GLADM25/GLOBAL_STATIONS_GLADM25.dat'
+#ALL mode used in the full waveform inversion
+modes: ['17_40','40_100#body_wave','40_100#surface_wave','90_250']
+#modes: ['17_40']
+#Global stations and events
+Finfo: "/data/GLOBAL-STATIONS-GLADM25/EVENT_STATIONS_EPIDIST.dat"
+#Set the percentiles of the trim data and the original data
+#Original data percentiles
+#Name of the file to save events
+#
+msize: 20
+#max_value:  2.0
+#min_value: -2.0
+#F_names : 'FILE_EVENTS_low_CCT.dat'
+#Fonte for text
+fontsize_Title : 18
+fontsize_Label : 24
+fontsize_Txt   : 17
+fsize_abc      : 35
